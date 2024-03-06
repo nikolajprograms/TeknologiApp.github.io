@@ -1,0 +1,101 @@
+* {
+    margin: unset;
+    padding: unset;
+}
+
+body {
+    background: hwb(94 91% 0%);
+    border-radius: 3rem;
+    border-width: 3rem;
+    border-color: #f3d3c3;
+    position: relative;
+}
+
+#header {
+    background: #03A63C;
+    height: 3rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+}
+
+#headerDiv {
+    height: 3rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    text-align: left;
+}
+
+a {
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+#exitButtonImage {
+    padding-top: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+#header-logo {
+    padding-top: 0.5rem;
+    height: 2rem;
+}
+
+#main {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    color: black;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#plantImage {
+    max-width: 250px;
+    max-height: 500px;
+    height: 50%;
+    padding: 1rem;
+}
+
+#plantName {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: black;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    max-width: 400px;
+}
+
+#plantDescription {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    display: inline-flex;
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 400px;
+}
+
+#footerContainer {
+    height: 100%
+}
+
+#footer {
+    background: #03A63C;
+    height: 3rem;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+}
