@@ -1,12 +1,10 @@
 const webCamElement = document.getElementById("webCam");
 const canvasElement = document.getElementById("canvas");
-let currentCamera = "user";
-const webcam = new Webcam(webCamElement, currentCamera, canvasElement);
+const webcam = new Webcam(webCamElement,"user", canvasElement);
 webcam.start();
 
 function switchCamera() {
-    currentCamera = (currentCamera === "user") ? "enviroment" : "user";
-    webcam.switchCamera(currentCamera);
+   webcam.flip();
 }
 
 function takeAPicture() {
