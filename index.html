@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Teknologi App</title>
+        <link rel="icon" href="./AppIconGreen.png">
+        <link rel="stylesheet" href="./Index.css">
+        <script type="text/javascript" src="https://unpkg.com/webcam-easy@1.1.1/dist/webcam-easy.min.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <img id="header-logo" src="./AppIcon.png">
+        </div>
+        
+        <div id="cameraDiv">
+            <video id="webCam" autoplay playsinline></video>
+            <canvas id="canvas"></canvas>
+        </div>
+        <div id="buttonDiv">
+            <a download onClick="takeAPicture()"><img id="buttonImage" src="./CameraIcon.png"></a>
+        </div>
+        <div id="footerContainer">
+            <div id="footer"></div>
+        </div>
+        <script src="./Index.js"></script>
+    </body>
+</html>
