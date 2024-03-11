@@ -12,10 +12,10 @@ function switchCamera() {
    webcam.facingMode = webcam.facingMode === 'user' ? 'enviroment' : 'user';
 
    if (webcam.facingMode == 'user') {
-        webCamElement.style.transform = "scaleX(1)";
+        webCamElement.style.transform = 'scaleX(1)';
     }
    else {
-        webCamElement.style.transform = "scaleX(-1)"
+        webCamElement.style.transform = 'scaleX(-1)';
     }
    
    setTimeout(() => {
