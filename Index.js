@@ -1,10 +1,12 @@
 const webCamElement = document.getElementById("webCam");
 const canvasElement = document.getElementById("canvas");
+let cameraSwitch = 'user';
 const webcam = new Webcam(webCamElement,"user", canvasElement);
 webcam.start();
 
 function switchCamera() {
-   webcam.flip();
+   cameraSwitch = cameraSwitch === 'user' ? 'environment' : 'user';
+   webcam.start();
 }
 
 function takeAPicture() {
