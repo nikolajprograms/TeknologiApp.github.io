@@ -1,6 +1,6 @@
 const webCamElement = document.getElementById("webCam");
 const canvasElement = document.getElementById("canvas");
-let cameraSwitch = 'user';
+let cameraSwitch = 'enviroment';
 const webcam = new Webcam(webCamElement, cameraSwitch, canvasElement);
 webcam.start();
 
