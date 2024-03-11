@@ -6,7 +6,7 @@ webcam.start();
 
 function switchCamera() {
    webcam.stop();
-   webcam.cameraSwitch = webcam.cameraSwitch === 'user' ? 'environment' : 'user';
+   webcam.cameraSwitch = 'enviroment';
    setTimeout(() => {
         webcam.start();
    }, 500);
