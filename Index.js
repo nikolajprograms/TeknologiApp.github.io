@@ -1,11 +1,12 @@
 const webCamElement = document.getElementById("webCam");
 const canvasElement = document.getElementById("canvas");
-const webcam = new Webcam(webCamElement, 'user', canvasElement);
+let cameraSwitch = 'user';
+const webcam = new Webcam(webCamElement, cameraSwitch, canvasElement);
 webcam.start();
 
 function switchCamera() {
    webcam.stop();
-   webcam.facingMode = webcam.facingMode === 'user' ? 'environment' : 'user';
+   webcam.cameraSwitch = webcam.cameraSwitch === 'user' ? 'environment' : 'user';
    setTimeout(() => {
         webcam.start();
    }, 500);
