@@ -10,10 +10,19 @@ setTimeout(() => {
 function switchCamera() {
    webcam.stop();
    webcam.facingMode = webcam.facingMode === 'user' ? 'enviroment' : 'user';
-   console.log(webcam.facingMode);
+
+   if (webcam.facingMode == 'user') {
+        webCamElement.style.transform = "scaleX(1)";
+    }
+   else {
+        webCamElement.style.transform = "scaleX(-1)"
+    }
+   
    setTimeout(() => {
         webcam.start();
    }, 500);
+
+    console.log(webcam.facingMode);
 }
 
 function takeAPicture() {
