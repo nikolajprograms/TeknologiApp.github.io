@@ -4,6 +4,7 @@ const webcam = new Webcam(webCamElement, 'user', canvasElement);
 webcam.start();
 
 function switchCamera() {
+   webcam.stop();
    webcam.facingMode = webcam.facingMode === 'user' ? 'environment' : 'user';
    setTimeout(() => {
         webcam.start();
