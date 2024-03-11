@@ -5,7 +5,7 @@ const webcam = new Webcam(webCamElement, cameraSwitch, canvasElement);
 webcam.start();
 
 function switchCamera() {
-   cameraSwitch = cameraSwitch === 'user' ? 'environment' : 'user';
+   webcam.cameraSwitch = webcam.cameraSwitch === 'user' ? 'environment' : 'user';
    setTimeout(() => {
         webcam.start();
    }, 500);
