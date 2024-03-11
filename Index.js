@@ -20,7 +20,7 @@ function switchCamera() {
    
    setTimeout(() => {
         webcam.start();
-   }, 500);
+   }, 200);
 
     console.log(webcam.facingMode);
 }
