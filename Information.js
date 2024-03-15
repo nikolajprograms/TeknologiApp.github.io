@@ -1,6 +1,6 @@
 function pageLoaded() {
     let accessKey = document.location.search.replace(/^.*?\=/, '')
-    const urlRetrieve = `https://plant.id/api/v3/identification/${accessKey}?details=common_names,name_authority,description,image,watering&language=en`;
+    const urlRetrieve = `https://plant.id/api/v3/identification/${accessKey}?details=common_names,name_authority,description,image,watering&language=da`;
     const optionsRetrieve = {
         method: 'GET',
         headers: {
